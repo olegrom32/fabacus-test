@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  redis:
+    image: redis:7.0.4-alpine
+  app:
+    build: .
+    ports:
+      - "3000:3000"
